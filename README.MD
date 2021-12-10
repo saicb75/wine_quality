@@ -33,7 +33,7 @@ Output variable (based on sensory data):
 
 
 ## Approach for Wine Quality Model Development
-We will be developing separate models for the red wine and white wine datasets because the UCI website provides two separate datasets. We want to analyze them separately to determine if there is any difference in the models and predictions. If this hypothesis holds true, then we might want to deploy both models separately; otherwise we can combine predictions through a single model.
+We will be developing separate models for the red wine and white wine datasets because (a) red and white wines are produced differently and (b) the UCI website provides two separate datasets. We want to analyze them separately to show any differences in the models and predictions.
 
 ### Project Setup:
 
@@ -48,12 +48,10 @@ wine_quality
 
 ### Develop an ML Model
 
-Developing an ML model involves a number of steps.
+Developing an ML model involves a number of steps. Let us adopt the following Machine Learning Pipeline:
 
-Let us adopt the following Machine Learning Pipeline:
-
-1. **Sanity Check:** understand the data profile - number of rows, number of columns, data type of each column and its alignment with the expected data type as per the problem statement, target column characteristics and so on. 
-2. **EDA/Preprocessing:** check if any features or attributes are missing and how to handle these;
+1. Sanity Check 
+2. EDA/Preprocessing
 3. Feature Engineering
 4. Model Building
 5. Model Saving
