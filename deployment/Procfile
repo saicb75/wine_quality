@@ -1,1 +1,1 @@
-web: gunicorn wine_model_deployment:app
+web: gunicorn wine-quality-deployment:app

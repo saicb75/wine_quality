@@ -41,9 +41,13 @@ Our project adopts a folder structure as follows:
 
 <pre>
 wine_quality
-    |________ datasets
-    |________ models
+    |________ ml-models
+        |________ datasets
+        |________ models
     |________ deployment
+        |________ models
+        |________ templates
+        
 </pre>
 
 ### Develop an ML Model
@@ -69,16 +73,18 @@ Note: these extended steps are not covered in this exercise
 ### Results obtained
 
 #### Red Wine
-1. Model1 Accuracy 91.94 : We have considered all 11 feature columns 
-2. Model2 Accuracy 91.92 : We have dropped three columns showing very weak correlations with the target (0.0 - 0.2)
-3. Model3 Accuracy 91.86 : We have dropped five columns showing weak correlations with the target (0.2 - 0.4)
+
+1. Model1 Accuracy 86.56 : We have considered all 11 feature columns 
+2. Model2 Accuracy 86.68 : We have dropped three columns showing very weak correlations with the target (0.0 - 0.2)
+3. Model3 Accuracy 86.67 : We have dropped five columns showing weak correlations with the target (0.2 - 0.4)
 
 Since we are getting almost the same accuracy across models, we prefer model3 as it has least number of features.
 
 #### White Wine
-1. Model1 Accuracy 90.54 : We have considered all 11 feature columns
-2. Model2 Accuracy 89.54 : We have dropped eight columns showing very weak correlations with the target (0.0 - 0.2)
-3. Model3 Accuracy 89.38 : We have dropped two columns showing weak correlations with the target (0.2 - 0.4)
+
+1. Model1 Accuracy 86.42 : We have considered all 11 feature columns
+2. Model2 Accuracy 86.48 : We have dropped eight columns showing very weak correlations with the target (0.0 - 0.2)
+3. Model3 Accuracy 86.6 : We have dropped two columns showing weak correlations with the target (0.2 - 0.4)
 
 Model 3 predicts the quality using just 1 column - i.e., alcohol - this doesn't make sense. We will be conservative and choose Model 1 for the way forward.
 
